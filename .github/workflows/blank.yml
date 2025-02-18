@@ -23,5 +23,17 @@ jobs:
 
       - name: Run Docker Container
         run: |
-          docker run -d -p 80:80 --name nginx-container my-nginx
+          docker run -d -p 8080:80 --name nginx-container my-nginx
           # This is a basic workflow to help you get started with Actions
+      - name: Docker container inspect 
+        run: |
+          docker inspect nginx-container
+      - name: docker container list
+        run: |
+          docker ps -a
+      - name: host ip 
+        run: |
+          hostname -I
+      - name: ip
+        run: |
+          ip r l
