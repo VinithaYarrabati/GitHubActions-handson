@@ -31,3 +31,6 @@ jobs:
       - name: docker container list
         run: |
           docker ps -a
+      - name: host ip 
+        run: |
+          hostname -I
