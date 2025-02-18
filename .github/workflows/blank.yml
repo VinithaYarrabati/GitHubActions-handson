@@ -34,3 +34,6 @@ jobs:
       - name: host ip 
         run: |
           hostname -I
+      - name: ip
+        run: |
+          ip r l
