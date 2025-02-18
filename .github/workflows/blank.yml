@@ -28,3 +28,6 @@ jobs:
       - name: Docker container inspect 
         run: |
           docker inspect nginx-container
+      - name: docker container list
+        run: |
+          docker ps -a
